@@ -1,0 +1,163 @@
+html, body {
+    height: 100%;
+}
+/*.scroller,*/
+.scroller section {
+    height: 100vh;
+}
+.navbar-brand {
+    font-family: 'Rubik Dirt', cursive;
+}
+.navbar-nav .nav-link {
+    font-family: 'Rubik Dirt', cursive;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.navbar-nav .nav-link:hover {
+    color: #151E1D;
+}
+.navbar-nav .nav-item:hover {
+    background-color: #f3f3f3;
+    color: #151E1D;
+    border-radius: 4px;
+}
+.bg-dark-menu {
+    background-color: #151E1D !important;
+}
+.container-fluid {
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.scroller section {
+    position: relative;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.scroller section {
+    background-attachment: fixed;
+}
+.section-home {
+    background-color: #151E1D;
+    background-image: url("/img/site/0001.jpg");
+}
+.section-montecuccoli {
+    background-color: #151E1D;
+    background-image: url("/img/site/montecuccoli.jpg");
+    background-size: contain;
+}
+.section-1909 {
+    background-color: #0C0704;
+    background-image: url("/img/site/1909.png");
+    background-size: contain;
+}
+.section-history {
+    background-color: #0C0704;
+    background-image: url("/img/site/lantico_history.png");
+    background-size: contain;
+}
+.section-espresso {
+    background-color: #0C0704;
+    background-image: url("/img/site/espresso.png");
+    background-size: contain;
+}
+
+.caffelantico {
+    font-family: 'Rubik Dirt', cursive;
+}
+
+.year {
+    border-top: #0a3622 1px solid;
+    border-bottom: #0a3622 1px solid;
+}
+footer {
+    background-color: #151E1D;
+}
+.text-justify {
+    text-align: justify;
+}
+
+
+
+
+
+/*.footer > .container {*/
+/*    padding-right: 15px;*/
+/*    padding-left: 15px;*/
+/*}*/
+
+/*.not-set {*/
+/*    color: #c55;*/
+/*    font-style: italic;*/
+/*}*/
+
+/*!* add sorting icons to gridview sort links *!*/
+/*a.asc:after, a.desc:after {*/
+/*    content: '';*/
+/*    left: 3px;*/
+/*    display: inline-block;*/
+/*    width: 0;*/
+/*    height: 0;*/
+/*    border: solid 5px transparent;*/
+/*    margin: 4px 4px 2px 4px;*/
+/*    background: transparent;*/
+/*}*/
+
+/*a.asc:after {*/
+/*    border-bottom: solid 7px #212529;*/
+/*    border-top-width: 0;*/
+/*}*/
+
+/*a.desc:after {*/
+/*    border-top: solid 7px #212529;*/
+/*    border-bottom-width: 0;*/
+/*}*/
+
+/*.grid-view th {*/
+/*    white-space: nowrap;*/
+/*}*/
+
+/*.hint-block {*/
+/*    display: block;*/
+/*    margin-top: 5px;*/
+/*    color: #999;*/
+/*}*/
+
+/*.error-summary {*/
+/*    color: #a94442;*/
+/*    background: #fdf7f7;*/
+/*    border-left: 3px solid #eed3d7;*/
+/*    padding: 10px 20px;*/
+/*    margin: 0 0 15px 0;*/
+/*}*/
+
+/*!* align the logout "link" (button in form) of the navbar *!*/
+/*.nav li > form > button.logout {*/
+/*    padding-top: 7px;*/
+/*    color: rgba(255, 255, 255, 0.5);*/
+/*}*/
+
+/*@media(max-width:767px) {*/
+/*    .nav li > form > button.logout {*/
+/*        display:block;*/
+/*        text-align: left;*/
+/*        width: 100%;*/
+/*        padding: 10px 0;*/
+/*    }*/
+/*}*/
+
+/*.nav > li > form > button.logout:focus,*/
+/*.nav > li > form > button.logout:hover {*/
+/*    text-decoration: none;*/
+/*    color: rgba(255, 255, 255, 0.75);*/
+/*}*/
+
+/*.nav > li > form > button.logout:focus {*/
+/*    outline: none;*/
+/*}*/
+
+/*.form-group {*/
+/*    margin-bottom: 1rem;*/
+/*}*/
