@@ -73,14 +73,26 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
     </div>
 </main>
 
-<footer class="h-100 text-light">
-    <hr><hr><hr><hr><hr><hr><hr><hr><hr><hr>
+<footer id="footer" class="h-100 text-light">
+  <div class="container-fluid">
+    <div class="row mx-0 pt-5">
+      <div class="col-lg-3 col-md-6">
+          <a href="/" class="text-light text-decoration-none m-5">
+            <img src="img/site/logo-white.svg" alt="logo" class="img-fluid" width="160px">
+          </a>
+          <p class="fs-5 ms-5 mt-3 ">
+            © 2023 ООО "Орион" <br>
+            ИНН 7604310150 <br>
+            ОГРН 1167627084866
+          </p>
+      </div>
+    </div>
+  </div>
 </footer>
 <!--<footer id="footer" class="mt-auto py-3 bg-light">-->
 <!--    <div class="container">-->
 <!--        <div class="row text-muted">-->
 <!--            <div class="col-md-6 text-center text-md-start">&copy; My Company --><?php //= date('Y') ?><!--</div>-->
-<!--            <div class="col-md-6 text-center text-md-end">--><?php //= Yii::powered() ?><!--</div>-->
 <!--        </div>-->
 <!--    </div>-->
 <!--</footer>-->
