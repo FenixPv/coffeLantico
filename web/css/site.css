@@ -78,6 +78,9 @@ footer {
 .text-justify {
     text-align: justify;
 }
+.page {
+    background-color: #151E1D;
+}
 
 
 
@@ -156,8 +159,4 @@ footer {
 
 /*.nav > li > form > button.logout:focus {*/
 /*    outline: none;*/
-/*}*/
-
-/*.form-group {*/
-/*    margin-bottom: 1rem;*/
 /*}*/
