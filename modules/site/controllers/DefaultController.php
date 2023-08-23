@@ -35,4 +35,12 @@ class DefaultController extends Controller
     {
         return $this->render('perfecto-coffee');
     }
+    public function actions()
+    {
+        return [
+            'error' => [
+                'class' => 'yii\web\ErrorAction',
+            ],
+        ];
+    }
 }
