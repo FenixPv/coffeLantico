@@ -3,22 +3,22 @@
 $params = require __DIR__ . '/params.php';
 
 return [
-    'basePath' => dirname(__DIR__),
-    'bootstrap' => ['log'],
-    'language' => 'ru-RU',
-    'aliases' => [
+    'basePath'   => dirname(__DIR__),
+    'bootstrap'  => ['log'],
+    'language'   => 'ru-RU',
+    'aliases'    => [
         '@bower' => '@vendor/bower-asset',
         '@npm'   => '@vendor/npm-asset',
     ],
     'components' => [
-        'db' => [
+        'db'          => [
             'class' => 'yii\db\Connection',
             'charset' => 'utf8',
         ],
-        'cache' => [
+        'cache'       => [
             'class' => 'yii\caching\FileCache',
         ],
-        'log' => [
+        'log'         => [
             'targets' => [
                 [
                     'class' => 'yii\log\FileTarget',
@@ -26,6 +26,9 @@ return [
                 ],
             ],
         ],
+        'authManager' => [
+            'class' => 'yii\rbac\DbManager',
+        ],
     ],
-    'params' => $params,
+    'params'     => $params,
 ];
