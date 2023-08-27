@@ -28,8 +28,9 @@ $config = [
         ],
 
         'user' => [
-            'identityClass' => 'app\models\User',
+            'identityClass' => 'app\modules\user\models\User',
             'enableAutoLogin' => true,
+            'loginUrl' => ['login'],
         ],
         'errorHandler' => [
             'errorAction' => 'site/default/error',
@@ -48,9 +49,9 @@ $config = [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
-                ''                                                          => 'site/default/index',
-                '<_a:(about|error|history|perfecto-coffee)>'                => 'site/default/<_a>',
-                '<_a:(login|logout|password-reset-request|password-reset)>' => 'user/default/<_a>',
+                ''                                                        => 'site/default/index',
+                '<_a:(about|error|history|perfecto-coffee|login|logout)>' => 'site/default/<_a>',
+                '<_a:(password-reset-request|password-reset)>'            => 'user/default/<_a>',
 
                 '<_m:[\w\-]+>'                                    => '<_m>/default/index',
                 '<_m:[\w\-]+>/<id:\d+>'                           => '<_m>/default/view',

@@ -81,6 +81,27 @@ footer {
 .page {
     background-color: #151E1D;
 }
+.surface-dark {
+    background: rgba(255, 255, 255, 0.192);
+    backdrop-filter: blur(10px);
+    border-radius: 1rem;
+    border: 1px solid rgba(43, 43, 43, 0.568);
+}
+.form-control-dark {
+    background-color: #151E1D;
+    border: 1px solid #151E1D;
+    border-bottom: 1px white;
+}
+.form-control-dark::placeholder {
+    color: white;
+}
+.form-check-input:checked {
+    background-color: #151E1D;
+    border-color: #151E1D;
+}
+.btn-dark {
+    background-color: #151E1D;
+}
 
 
 
@@ -151,12 +172,3 @@ footer {
 /*    }*/
 /*}*/
 
-/*.nav > li > form > button.logout:focus,*/
-/*.nav > li > form > button.logout:hover {*/
-/*    text-decoration: none;*/
-/*    color: rgba(255, 255, 255, 0.75);*/
-/*}*/
-
-/*.nav > li > form > button.logout:focus {*/
-/*    outline: none;*/
-/*}*/
