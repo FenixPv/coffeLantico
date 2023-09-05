@@ -2,6 +2,7 @@
 
 namespace app\modules\user\models;
 
+use Exception;
 use Yii;
 use yii\base\NotSupportedException;
 use yii\behaviors\TimestampBehavior;
@@ -91,6 +92,11 @@ class User extends ActiveRecord implements IdentityInterface
         ];
     }
 
+    /**
+     * @return mixed
+     * @throws Exception
+     * @noinspection PhpUnused
+     */
     public function getStatusName(): mixed
     {
         return ArrayHelper::getValue(self::getStatusesArray(), $this->status);
@@ -141,6 +147,12 @@ class User extends ActiveRecord implements IdentityInterface
         return Yii::$app->security->validatePassword($password, $this->password_hash);
     }
 
+    /**
+     * @param $password
+     * @return void
+     * @throws \yii\base\Exception
+     * @noinspection PhpUnused
+     */
     public function setPassword($password): void
     {
         $this->password_hash = Yii::$app->security->generatePasswordHash($password);
@@ -173,6 +185,11 @@ class User extends ActiveRecord implements IdentityInterface
         return $timestamp + $expire >= time();
     }
 
+    /**
+     * @param $token
+     * @return User|null
+     * @noinspection PhpUnused
+     */
     public static function findByPasswordResetToken($token): ?User
     {
         if (!static::isPasswordResetTokenValid($token)) {
@@ -184,11 +201,20 @@ class User extends ActiveRecord implements IdentityInterface
         ]);
     }
 
+    /**
+     * @return void
+     * @throws \yii\base\Exception
+     * @noinspection PhpUnused
+     */
     public function generatePasswordResetToken(): void
     {
         $this->password_reset_token = Yii::$app->security->generateRandomString() . '_' . time();
     }
 
+    /**
+     * @return void
+     * @noinspection PhpUnused
+     */
     public function removePasswordResetToken(): void
     {
         $this->password_reset_token = null;
